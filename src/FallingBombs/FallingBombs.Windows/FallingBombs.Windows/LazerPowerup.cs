@@ -11,14 +11,8 @@ using Microsoft.Xna.Framework.Media;
 
 namespace FallingBombs.Windows
 {
-    class Explosion
+    class LazerPowerup : IPowerup
     {
-        internal static Texture2D spriteSheet;
-        internal static SoundEffect explosion1;
-        internal static SoundEffect explosion2;
-        internal static SoundEffect explosion3;
-        internal static SoundEffect explosion4;
-        internal static SoundEffect explosion5;
-        internal static SoundEffect explosion6;
+        internal static SoundEffect sound;
     }
 }

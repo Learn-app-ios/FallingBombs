@@ -69,17 +69,17 @@ namespace FallingBombs.Windows
 
             spriteFont = Content.Load<SpriteFont>("font");
 
-            Explosion.Explosion1 = Content.Load<SoundEffect>("Explosion1");
-            Explosion.Explosion2 = Content.Load<SoundEffect>("Explosion2");
-            Explosion.Explosion3 = Content.Load<SoundEffect>("Explosion3");
-            Explosion.Explosion4 = Content.Load<SoundEffect>("Explosion4");
-            Explosion.Explosion5 = Content.Load<SoundEffect>("Explosion5");
-            Explosion.Explosion6 = Content.Load<SoundEffect>("Explosion6");
-            //ExplosionPowerup.Sound = Content.Load<SoundEffect>("GrenadeUp");
-            //ShieldPowerup.Sound = Content.Load<SoundEffect>("ShieldUp");
-            //SpeedPowerup.Sound = Content.Load<SoundEffect>("SpeedUp");
-            //TeleportPowerup.Sound = Content.Load<SoundEffect>("GravityUp");
-            //LazerPowerup.Sound = Content.Load<SoundEffect>("LazerUp");
+            Explosion.explosion1 = Content.Load<SoundEffect>("Explosion1");
+            Explosion.explosion2 = Content.Load<SoundEffect>("Explosion2");
+            Explosion.explosion3 = Content.Load<SoundEffect>("Explosion3");
+            Explosion.explosion4 = Content.Load<SoundEffect>("Explosion4");
+            Explosion.explosion5 = Content.Load<SoundEffect>("Explosion5");
+            Explosion.explosion6 = Content.Load<SoundEffect>("Explosion6");
+            ExplosionPowerup.sound = Content.Load<SoundEffect>("GrenadeUp");
+            ShieldPowerup.sound = Content.Load<SoundEffect>("ShieldUp");
+            SpeedPowerup.sound = Content.Load<SoundEffect>("SpeedUp");
+            TeleportPowerup.sound = Content.Load<SoundEffect>("GravityUp");
+            LazerPowerup.sound = Content.Load<SoundEffect>("LazerUp");
 
             MediaPlayer.Play(song);
             MediaPlayer.IsRepeating = true;
