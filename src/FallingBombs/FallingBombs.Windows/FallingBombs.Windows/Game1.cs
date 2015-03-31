@@ -19,6 +19,8 @@ namespace FallingBombs.Windows
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
 
+        private Song song;
+
         public Game1()
         {
             graphics = new GraphicsDeviceManager(this);
@@ -47,7 +49,8 @@ namespace FallingBombs.Windows
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
-            // TODO: use this.Content to load your game content here
+            song = Content.Load<Song>("fallingbombsmusic");
+            MediaPlayer.Play(song);
         }
 
         /// <summary>
