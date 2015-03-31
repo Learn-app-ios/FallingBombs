@@ -20,11 +20,21 @@ namespace FallingBombs.Windows
         SpriteBatch spriteBatch;
 
         private Song song;
+        private SpriteFont spriteFont;
+        private Texture2D stars;
+        private Texture2D chargeMarker;
+
+        internal static Random random;
 
         public Game1()
         {
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
+        }
+
+        static Game1()
+        {
+            random = new Random();
         }
 
         /// <summary>
@@ -49,8 +59,32 @@ namespace FallingBombs.Windows
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
+            //AboutForm.FeedbackTexture = Content.Load<Texture2D>("email");
+            stars = Content.Load<Texture2D>("Stars");
+            chargeMarker = Content.Load<Texture2D>("ChargeMarker");
+            Explosion.spriteSheet = Content.Load<Texture2D>("Explosion");
+            Texture2D texture2D = Content.Load<Texture2D>(string.Format("Capture{0}", random.Next(1, 8)));
+
             song = Content.Load<Song>("fallingbombsmusic");
+
+            spriteFont = Content.Load<SpriteFont>("font");
+
+            Explosion.Explosion1 = Content.Load<SoundEffect>("Explosion1");
+            Explosion.Explosion2 = Content.Load<SoundEffect>("Explosion2");
+            Explosion.Explosion3 = Content.Load<SoundEffect>("Explosion3");
+            Explosion.Explosion4 = Content.Load<SoundEffect>("Explosion4");
+            Explosion.Explosion5 = Content.Load<SoundEffect>("Explosion5");
+            Explosion.Explosion6 = Content.Load<SoundEffect>("Explosion6");
+            //ExplosionPowerup.Sound = Content.Load<SoundEffect>("GrenadeUp");
+            //ShieldPowerup.Sound = Content.Load<SoundEffect>("ShieldUp");
+            //SpeedPowerup.Sound = Content.Load<SoundEffect>("SpeedUp");
+            //TeleportPowerup.Sound = Content.Load<SoundEffect>("GravityUp");
+            //LazerPowerup.Sound = Content.Load<SoundEffect>("LazerUp");
+
             MediaPlayer.Play(song);
+            MediaPlayer.IsRepeating = true;
+            MediaPlayer.Volume = 0.5f;
+
         }
 
         /// <summary>
