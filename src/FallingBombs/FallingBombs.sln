@@ -3,7 +3,23 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.22310.1
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FallingBombs.Windows", "FallingBombs.Windows\FallingBombs.Windows\FallingBombs.Windows.csproj", "{55749DF7-E8B0-4BAB-A3D8-41FB52E1D9E5}"
+EndProject
+Project("{96E2B04D-8817-42C6-938A-82C39BA4D311}") = "FallingBombs.WindowsContent", "FallingBombs.Windows\FallingBombs.WindowsContent\FallingBombs.WindowsContent.contentproj", "{73E0A3A4-E766-4BC2-BC6F-007AD0D17AAF}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{55749DF7-E8B0-4BAB-A3D8-41FB52E1D9E5}.Debug|x86.ActiveCfg = Debug|x86
+		{55749DF7-E8B0-4BAB-A3D8-41FB52E1D9E5}.Debug|x86.Build.0 = Debug|x86
+		{55749DF7-E8B0-4BAB-A3D8-41FB52E1D9E5}.Release|x86.ActiveCfg = Release|x86
+		{55749DF7-E8B0-4BAB-A3D8-41FB52E1D9E5}.Release|x86.Build.0 = Release|x86
+		{73E0A3A4-E766-4BC2-BC6F-007AD0D17AAF}.Debug|x86.ActiveCfg = Debug|x86
+		{73E0A3A4-E766-4BC2-BC6F-007AD0D17AAF}.Release|x86.ActiveCfg = Release|x86
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
